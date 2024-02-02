@@ -1,0 +1,23 @@
+@import "../../../../assets/scss/mixin.scss";
+.textarea{
+    resize: none;
+    width: 624px;
+    height: 100px;
+    padding: 7px 10px;
+
+}
+
+@include mobile{
+  .textarea{
+    width: 220px;
+    height: 80px; 
+}
+  }
+
+  @include tablet{
+    .textarea{
+      width: 320px;
+      height: 80px; 
+  }
+    }
+   

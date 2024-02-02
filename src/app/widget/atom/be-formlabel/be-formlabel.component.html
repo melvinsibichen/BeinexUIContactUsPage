@@ -1,0 +1,7 @@
+<div class="form-group">
+  <div [formGroup]="formData">
+    <input class="form-group__formin" [type]="'FormControlName'" [placeholder]="placeholder"
+      [formControlName]="FormControlName" />
+      <img *ngIf="iconPath" [src]="iconPath" alt="Icon" class="form-group__icon-svg" />
+  </div>
+</div>

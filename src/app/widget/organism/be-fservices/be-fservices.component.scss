@@ -1,0 +1,55 @@
+
+@import "../../../../assets/scss/mixin.scss";
+@import "../../../../assets/fonts/font.scss";
+
+.footer {
+    background: linear-gradient(72deg, #23133F 9.81%, #08205C 50.72%, #01326A 93.38%);
+    color: #FFF;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-family: $font;
+    //for large screen max width and margin
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &__img {
+        padding-bottom: 20px;
+    }
+
+    &__p {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__indus {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+
+}
+
+
+@include mobile {
+    .footer{
+        text-align: center;
+        padding-top: 150px;
+    }
+}
+
+
+
+@include tablet {
+
+    .footer{
+        text-align: center;
+    }
+}

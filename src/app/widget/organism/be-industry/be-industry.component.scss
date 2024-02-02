@@ -1,0 +1,184 @@
+@import "../../../../assets/scss/mixin.scss";
+@import "../../../../assets/fonts/font.scss";
+
+.be-industry {
+
+    justify-content: center;
+    background: radial-gradient(200.11% 117.15% at 97.19% -7.23%, #0089B8 0%, #012C6D 100%); 
+
+
+    padding: 50px;
+    // border: 2px solid red;
+    font-family: $font;
+
+    &__heading {
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__card {
+        // border: 2px solid gold;
+        // width: 306px;
+        padding: 20px;
+        width: 406px;
+        height: 436px;
+
+    }
+
+    &__card--changeclr1 {
+        background: rgba(255, 255, 255, 0.10);
+        box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(12px);
+
+    }
+
+    &__card--changeclr2 {
+        background: rgba(255, 255, 255, 0.20);
+        box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(12px);
+
+    }
+
+    &__card--changeclr3 {
+        background: rgba(255, 255, 255, 0.10);
+        box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(12px);
+
+    }
+
+    &__contentheading {
+        display: flex;
+        padding-top: 20px;
+        color: #FFF;
+        font-family: Poppins;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    &__contentheading,img{
+       padding-left: 20px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-between;
+       
+    }
+
+    &__content1 {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__contenth {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+        padding-left: 10px;
+
+    }
+
+    &__pagination {
+        text-align: center;
+    }
+
+    &__contentpara {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.5;
+    }
+
+    &__btn {
+        width: 100px;
+        height: 32px;
+        background-color: #04BBF2;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+
+
+
+    }
+
+    &__contactbtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+
+
+    }
+
+}
+
+
+
+@include mobile {
+    .be-industry {
+        &__cards {
+            flex-wrap: wrap;
+
+        }
+
+        &__card {
+            flex-wrap: wrap;
+
+        }
+
+        &__contentpara {
+            color: #FFF;            
+            font-size: 17px;
+            opacity: none;
+
+        }
+
+        &__contentheading {
+
+            font-size: medium;
+        }
+    }
+
+
+
+}
+
+
+
+@include tablet {
+    .be-industry {
+        &__cards {
+            flex-wrap: wrap;
+            // justify-content: space-around;
+        }
+
+        &__card {
+            flex-wrap: wrap;
+
+
+        }
+    }
+
+}

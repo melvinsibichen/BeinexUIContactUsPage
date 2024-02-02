@@ -1,0 +1,101 @@
+<form [formGroup]="mainForm" (ngSubmit)="onSubmit()">
+    <div class="be-formpart1">
+        <!-- labels -->
+        <div class="be-formpart1__left">
+            <app-be-formlabel class="be-formpart1__leftlabels" [FormControlName]="'name'"
+                [iconPath]="'assets/icons/Path 261.svg'" [formData]="mainForm"
+                [placeholder]="'Name'"></app-be-formlabel>
+
+            <app-be-formlabel class="be-formpart1__leftlabels" [FormControlName]="'email'"
+                [iconPath]="'assets/icons/Path 263.svg'" [formData]="mainForm"
+                [placeholder]="'Email ID'"></app-be-formlabel>
+
+            <app-be-formlabel class="be-formpart1__leftlabels" [FormControlName]="'phone'"
+                [iconPath]="'assets/icons/Path 274.svg'" [formData]="mainForm"
+                [placeholder]="'Code | Phone number'"></app-be-formlabel>
+        </div>
+
+        <div class="be-formpart1__right">
+
+            <app-be-formlabel class="be-formpart1__leftlabels" [FormControlName]="'company'"
+                [iconPath]="'assets/icons/Path 276.svg'" [formData]="mainForm"
+                [placeholder]="'Company'"></app-be-formlabel>
+
+            <app-be-formlabel class="be-formpart1__leftlabels" [FormControlName]="'role'"
+                [iconPath]="'assets/icons/Path 281.svg'" [formData]="mainForm"
+                [placeholder]="'Job role'"></app-be-formlabel>
+
+            <app-be-formlabel class="be-formpart1__leftlabels" [FormControlName]="'country'"
+                [iconPath]="'assets/icons/Path 276.svg'" [formData]="mainForm"
+                [placeholder]="'Select country'"></app-be-formlabel>
+
+        </div>
+    </div>
+    <!-- labels ends -->
+
+    <!-- textarea -->
+    <div class="be-formpart1__textarea">
+        <app-be-formtextarea [FormControlName]="'message'" [iconClass]="'fas fa-'"
+            [placeholder]="'Your message for us...'" [formData]="mainForm">
+        </app-be-formtextarea>
+    </div>
+    <!-- badges -->
+    <p class="be-formpart1__para1">What are you looking for?</p>
+
+    <div class="be-formpart1__badges">
+
+        <!-- <app-be-badge class="be-formpart1__badge" [text]="'Events'" [backgroundColor]="'#2D82E5'"
+            [textColor]="'#FFFFFF'"></app-be-badge>
+        <app-be-badge class="be-formpart1__badge" [text]="'Services'" [backgroundColor]="'#2D82E5'"
+            [textColor]="'#FFFFFF'"></app-be-badge>
+        <app-be-badge class="be-formpart1__badge" [text]="'Careers'" [backgroundColor]="'#e5f0fc'"
+            [textColor]="'#FFFFFF'"></app-be-badge>
+        <app-be-badge class="be-formpart1__badge" [text]="'Partner info'" [backgroundColor]="'#e5f0fc'"
+            [textColor]="'#FFFFFF'"></app-be-badge>
+        <app-be-badge class="be-formpart1__badge" [text]="'Blogs and other content'" [backgroundColor]="'#e5f0fc'"
+            [textColor]="'#FFFFFF'"></app-be-badge> -->
+
+            <div class="be-badges">
+                <div class="be-badge">
+                  <button>Events</button>
+                </div>
+                <div class="be-badge">
+                  <button>Services</button>
+                </div>
+                <div class="be-badge be-badge__2">
+                  <button>Careers</button>
+                </div>
+                <div class="be-badge be-badge__2">
+                  <button>Partner info</button>
+                </div>
+                <div class="be-badge be-badge__2">
+                  <button>Blogs and other content</button>
+                </div>
+              </div>
+
+        <!-- textarea2 -->
+        <p class="be-formpart1__whatpara">What you think we should know about you or your project:</p>
+        <div class="be-formpart1__textarea">
+            <app-be-formtextarea [FormControlName]="'message2'" [iconClass]="'fas fa-'"
+                [placeholder]="'Your text here..'" [formData]="mainForm">
+            </app-be-formtextarea>
+        </div>
+
+
+
+        <!-- upload file -->
+        <div class="be-formpart1__upload">
+            <p class="be-formpart1__uploadpara">Upload more info as a MS.Word or PDF file:</p>
+            <app-be-button class="be-btn  be-formpart1__uploadfilebtn" [text]="'Select File'"
+                [backgroundColor]="'#F3F3F3'" [textColor]="'black'"></app-be-button>
+
+        </div>
+
+        <!-- submit button -->
+        <app-be-button class="be-btn be-formpart1__submitbtn be-btn--submit " [text]="'Submit'"
+            [icon]="'../../../../assets/images/rightsubmit.svg'" [backgroundColor]="'rgba(16, 56, 91, 1)'"
+            [textColor]="'#fff'"></app-be-button>
+    </div>
+
+
+</form>

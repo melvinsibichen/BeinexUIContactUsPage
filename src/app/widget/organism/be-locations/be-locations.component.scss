@@ -1,0 +1,67 @@
+@import "../../../../assets/scss/mixin.scss";
+@import "../../../../assets/fonts/font.scss";
+
+.bnx-place {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: space-around;
+    background: #E9E9E9;
+    padding: 1rem 1rem;
+    font-family: $font;
+    //for large screen max width and margin
+    max-width: 1440px;
+    margin: 0 auto;
+
+
+    &__card {
+        padding-bottom: 70px;
+
+
+
+        h1 {
+            color: #000;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        p {
+            color: #666;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+        }
+
+    }
+
+    &__title {
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+
+    }
+
+
+    @include mobile {
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+    }
+
+
+
+    @include tablet {
+
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+    }
+
+
+}

@@ -1,0 +1,13 @@
+<div class="bnx-card  ps-3 pe-3">
+    <img src="imagesrc" >
+    <h1 class="bnx-title">{{heading}}</h1>
+    <p class="bnx-paragraph">
+        <ng-container *ngFor="let line of addressLines">
+            {{line}} <br>
+        </ng-container>
+        office:{{office}} <br>
+        phone:{{phone}} <br>
+        mobile:{{mobile}} <br>
+        email:{{email}}
+    </p>
+</div>

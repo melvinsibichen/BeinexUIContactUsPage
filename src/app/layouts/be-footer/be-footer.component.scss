@@ -1,0 +1,64 @@
+@import "../../../assets/fonts/font.scss";
+@import "../../../assets/scss/mixin.scss";
+.copyright {
+
+    background: #150D2B;
+    color: white;
+    font-family: Poppins;
+    font-size:14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: $font;
+
+     //for large screen max width and margin
+     max-width: 1440px;
+     margin: 0 auto;
+ 
+
+
+    &__first {
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+    &__img {
+        padding-top: 20px;
+
+    }
+    &__p {
+        color: white;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.6;
+        padding-top: 20px;
+
+    }
+
+}
+
+// @include mobile{
+
+   
+
+    
+
+// }
+
+// @include tablet{
+   
+
+// }

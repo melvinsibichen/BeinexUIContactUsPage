@@ -1,0 +1,118 @@
+@import "../../../../assets/scss/mixin.scss";
+@import "../../../../assets/fonts/font.scss";
+
+.be-thirdsection {
+    display: flex;
+    font-family: $font;
+    padding-bottom: 20px;
+    padding-left: 20px;
+     //for large screen max width and margin
+     max-width: 1440px;
+     margin: 0 auto;
+ 
+}
+
+.be-paperplane {
+
+    background-image: url('../../../../assets/images/Paper_Plane-Contact\ Us.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 620px;
+    width: 500px;
+    padding-left: 15px;
+    padding-top: 18rem;
+
+    &__content {
+        padding-top: 60px;
+    }
+
+    &__h2 {
+        color: #10385B;
+        font-family: Poppins;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 44px;
+        padding-left: 40px;
+
+    }
+
+    &__para1 {
+        color: #666;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    &__para2 {
+        color: #666;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        padding-left: 40px;
+    }
+
+
+}
+
+@include mobile {
+    .be-thirdsection {
+        flex-direction: column;
+        width: 90%;
+        // align-items: center;
+
+        &__para1 {
+            display: none;
+        }
+
+        &__para2 {
+            display: none;
+        }
+
+    }
+
+
+    .be-paperplane {
+        background-size: contain;
+        width: 301px;
+    }
+}
+
+
+
+
+
+@include tablet {
+    .be-thirdsection {
+        flex-direction: column;
+        width: 100%;
+
+
+    }
+
+    .be-paperplane {
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: 550px;
+        width: 500px;
+
+        &__para1 {
+            display: none;
+        }
+
+        &__para2 {
+            display: none;
+        }
+    }
+
+
+
+}
