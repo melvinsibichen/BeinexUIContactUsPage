@@ -61,62 +61,69 @@
 
     &__submitbtn {
         padding-left: 10px;
-       
+
 
     }
-    &__uploadfilebtn{
+
+    &__uploadfilebtn {
         padding: 6px 0px;
     }
 }
-.be-btn--new{
+
+.be-btn--new {
     width: 116px;
     height: 31px;
     flex-shrink: 0;
     background: #F3F3F3;
 }
+
 .be-badges {
     display: flex;
     flex-wrap: wrap;
     padding-left: 10px;
-   
+
     .be-badge {
-      button {
-        width: 80px;
-        height: 25px;
-        background-color: #2d82e5;
-        border-radius: 40px;
-        font-size: 14px;
-        color: #fff;
-        margin: 5px;
-        font-size: 12px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-      }
-   
-      &__2 {
         button {
-          padding-left: 10px;
-          padding-right: 10px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: auto;
-          border-radius: 40px;
-          color: #2d82e5;
-          border: 1px solid #2d82e5;
-          background: rgba(45, 130, 229, 0.12);
+            width: 80px;
+            height: 25px;
+            background-color: #2d82e5;
+            border-radius: 40px;
+            font-size: 14px;
+            color: #fff;
+            margin: 5px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
         }
-      }
+
+        &__2 {
+            button {
+                padding-left: 10px;
+                padding-right: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+                border-radius: 40px;
+                color: #2d82e5;
+                border: 1px solid #2d82e5;
+                background: rgba(45, 130, 229, 0.12);
+            }
+        }
     }
-  }
+}
 
 @include mobile {
     .be-formpart1 {
         flex-direction: column;
 
-        // &__textarea {}
+        &__uploadfilebtn {
+            padding: 0px;
+         
+           
+        }
     }
 
 
