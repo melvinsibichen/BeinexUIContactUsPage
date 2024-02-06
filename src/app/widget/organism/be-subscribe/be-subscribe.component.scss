@@ -1,28 +1,23 @@
 @import "../../../../assets/scss/mixin.scss";
 @import "../../../../assets/fonts/font.scss";
-.bnx-subscribecontainer{
 
-}
+.bnx-subscribecontainer {}
 
 .bnx-subscribe {
     background-color: #1D7AD0;
     color: #fff;
     padding: 2rem;
-   
     margin: -4rem 2rem 0 2rem;
     position: absolute;
     width: calc(100vw - 5rem);
-    // overflow: auto;
     font-family: $font;
-    // width: 1200px;
     height: 113px;
     flex-shrink: 0;
-    
-
- 
+    // overflow: auto;
+    // width: 1200px;
 
     .input-group {
-        margin: 0;     
+        margin: 0;
 
     }
 
@@ -50,15 +45,9 @@
         width: 90%;
         height: 25%;
         margin: -7rem 2rem 0 2rem;
-      
-
 
     }
-
-
 }
-
-
 
 @include tablet {
     bnx-subscribe {

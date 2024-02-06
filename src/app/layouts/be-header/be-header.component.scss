@@ -3,7 +3,6 @@
 
 .bnx-primary-header {
 
-    // padding: 0rem 1.5rem;
     padding: 1px 30px 0px 15px;
     display: flex;
     justify-content: space-between;
@@ -44,9 +43,9 @@
                 font-style: normal;
                 font-weight: 400;
             }
-           
+
         }
-       
+
 
     }
 
@@ -59,19 +58,18 @@
         background: #10385B;
         color: #FFF;
     }
-    // &__hr{
-    //     stroke-width: 2px;
-    //     stroke: #F5F5F5;
-    // }
+
 
 
 }
-.be-btn{
-    font-size:12px ;
+
+.be-btn {
+    font-size: 12px;
 
 }
-@include mobile{
+
+@include mobile {
     .bnx-primary-header {
-        display: none; 
-    } 
+        display: none;
+    }
 }

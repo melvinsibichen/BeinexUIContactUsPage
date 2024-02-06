@@ -65,8 +65,7 @@
 @include mobile {
     .be-thirdsection {
         flex-direction: column;
-        width: 90%;
-        // align-items: center;
+        width: 90%;       
 
         &__para1 {
             display: none;
