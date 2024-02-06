@@ -1,16 +1,21 @@
 @import "../../../../assets/scss/mixin.scss";
 @import "../../../../assets/fonts/font.scss";
 
+.bnx-container {
+
+    background: #E9E9E9;
+}
+
 .bnx-place {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     justify-content: space-around;
-    background: #E9E9E9;
     padding: 1rem 1rem;
     font-family: $font;
-    //for large screen max width and margin
     max-width: 1440px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+
 
 
     &__card {
